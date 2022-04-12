@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "a8c70240-59e8-4107-80d4-a83699615125",
+  "alias": "ManageSchedulesWebPart",
+  "componentType": "WebPart",
+
+  
+  "version": "*",
+  "manifestVersion": 2,
+
+  
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "ManageSchedules" },
+    "description": { "default": "ManageSchedules description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "ManageSchedules"
+    }
+  }]
+}
