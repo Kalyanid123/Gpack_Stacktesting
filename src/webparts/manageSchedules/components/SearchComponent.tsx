@@ -3,8 +3,7 @@ import pnp from 'sp-pnp-js';
 import styles from './ManageSchedules.module.scss';
 //import {Dropdown, IDropdownStyles, IDropdownOption} from '@fluentui/react';
 import { IManageSchedulesProps } from './IManageSchedulesProps';
-import {PrimaryButton,Dropdown, IDropdownStyles, IDropdownOption, MessageBar, MessageBarType, Stylesheet, DefaultButton,} from 'office-ui-fabric-react';
-import ManageSchedules from './ManageSchedules';
+import {Checkbox, PrimaryButton,Dropdown, IDropdownStyles, IDropdownOption, MessageBar, MessageBarType, Stylesheet, DefaultButton,} from 'office-ui-fabric-react';
 import { size } from 'lodash';
 
 export interface SearchComponentState{
