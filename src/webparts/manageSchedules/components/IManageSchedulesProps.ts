@@ -4,9 +4,9 @@ export interface IManageSchedulesProps {
   spcontext:WebPartContext;
   SiteUrl:string;
   PageName:any;
-  GridViewPageName:any;
-  ManageSchedulesPageName:any;
-  LandingScreenPageName:any;
+  //GridViewPageName:any;
+  //ManageSchedulesPageName:any;
+  //LandingScreenPageName:any;
 
 
 

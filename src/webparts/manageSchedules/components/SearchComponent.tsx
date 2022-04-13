@@ -13,10 +13,10 @@ export interface SearchComponentState{
     RegionsTitle:any;
     FacilitiesTitle:any;
     GPYear:any;
-    DashboardGridView:any;
-    DasboardHome:any;
-    ManageSchedules:any;
-    LandingScreen:any;
+    SelectedPageName:any;
+    //DasboardHome:any;
+    //ManageSchedules:any;
+    //LandingScreen:any;
  }
   
   export default class SearchComponent extends React.Component<IManageSchedulesProps,SearchComponentState>{
@@ -64,10 +64,10 @@ export interface SearchComponentState{
         RegionsTitle:"",
         FacilitiesTitle:"",
         GPYear:"",
-        DashboardGridView:this.props.PageName,
-        DasboardHome:this.props.GridViewPageName,
-        ManageSchedules:this.props.ManageSchedulesPageName,
-        LandingScreen:this.props.LandingScreenPageName
+        SelectedPageName:this.props.PageName,
+        //DasboardHome:this.props.GridViewPageName,
+        //ManageSchedules:this.props.ManageSchedulesPageName,
+        //LandingScreen:this.props.LandingScreenPageName
     };
     
 
@@ -183,7 +183,7 @@ private onSelectYear= async () => {
             
             <form>
             <div className={styles.container}>
-            {(this.state.DashboardGridView == "DashboardGridView" || this.state.ManageSchedules === "ManageSchedules") &&
+            {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName === "ManageSchedules") &&
             <div>
             <h1 className={styles.heading}>Stack Testing</h1>
             <div className={styles.SPbutton}>
@@ -196,7 +196,7 @@ private onSelectYear= async () => {
             <div>
             <table className={styles.Gptable}>
             <tr >
-            {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.ManageSchedules === "ManageSchedules" || this.state.LandingScreen=="LandingScreen")  &&
+            {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName === "ManageSchedules" || this.state.SelectedPageName=="LandingScreen")  &&
             <td className={styles.Gptd}>
             <Dropdown className={styles.dropdown}
                 placeholder="Select Operating group"
@@ -207,7 +207,7 @@ private onSelectYear= async () => {
                />
             </td>
             }
-            {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.ManageSchedules === "ManageSchedules" || this.state.LandingScreen=="LandingScreen") &&
+            {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName === "ManageSchedules" || this.state.SelectedPageName=="LandingScreen") &&
             <td className={styles.Gptd}>
             <Dropdown className={styles.dropdown}
                 placeholder="Select Business"
@@ -218,7 +218,7 @@ private onSelectYear= async () => {
              />
              </td>
             }
-            { (this.state.DashboardGridView == "DashboardGridView"  || this.state.DasboardHome == "DashboardHome" || this.state.ManageSchedules === "ManageSchedules" || this.state.LandingScreen=="LandingScreen") &&
+            { (this.state.SelectedPageName == "DashboardGridView"  || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName === "ManageSchedules" || this.state.SelectedPageName=="LandingScreen") &&
             <td className={styles.Gptd}>
              <Dropdown className={styles.dropdown}
                 placeholder="Select Regions"
@@ -229,7 +229,7 @@ private onSelectYear= async () => {
               />
               </td>
              }
-             {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.ManageSchedules === "ManageSchedules" || this.state.LandingScreen=="LandingScreen") &&
+             {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName === "ManageSchedules" || this.state.SelectedPageName=="LandingScreen") &&
               <td className={styles.Gptd}>
                <Dropdown className={styles.dropdown}
                 placeholder="Select Facilities"
@@ -240,7 +240,7 @@ private onSelectYear= async () => {
               />
               </td>
               }
-              {(this.state.DashboardGridView == "DashboardGridView" || this.state.LandingScreen=="LandingScreen") &&
+              {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName=="LandingScreen") &&
               <td className={styles.Gptd}>
                <Dropdown className={styles.dropdown}
                 placeholder="Select Status"
@@ -251,7 +251,7 @@ private onSelectYear= async () => {
               />
               </td>
               }
-              {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.LandingScreen=="LandingScreen") &&
+              {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName=="LandingScreen") &&
               <td className={styles.Gptd}>
                <Dropdown className={styles.dropdown}
                 placeholder="Select Year"
@@ -260,7 +260,7 @@ private onSelectYear= async () => {
               />
               </td>
               }
-              {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.LandingScreen=="LandingScreen") &&
+              {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName=="LandingScreen") &&
               <td className={styles.Gptd}>
                <Dropdown className={styles.dropdown}
                 placeholder="Select Month"
@@ -269,7 +269,7 @@ private onSelectYear= async () => {
               />
               </td>
               }
-              {(this.state.DashboardGridView == "DashboardGridView" || this.state.DasboardHome == "DashboardHome" || this.state.ManageSchedules === "ManageSchedules" || this.state.LandingScreen=="LandingScreen")  &&
+              {(this.state.SelectedPageName == "DashboardGridView" || this.state.SelectedPageName == "DashboardHome" || this.state.SelectedPageName === "ManageSchedules" || this.state.SelectedPageName=="LandingScreen")  &&
               <td className={styles.Gpbutton}> 
               <PrimaryButton text="Go"/>
               </td>

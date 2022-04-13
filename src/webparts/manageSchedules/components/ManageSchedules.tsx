@@ -18,13 +18,13 @@ export default class ManageSchedules extends React.Component<IManageSchedulesPro
     return (
       <div>   
         {/* DashboardGridView page */}
-        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"DashboardGridView"} GridViewPageName={"DashboardGridView"} ManageSchedulesPageName={"DashboardGridView"} LandingScreenPageName={"DashboardGridView"}/>
+        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"DashboardGridView"}/>
         {/* DashboardHome page */}   
-        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"DashboardHome"} GridViewPageName={"DashboardHome"} ManageSchedulesPageName={"DashboardHome"} LandingScreenPageName={"DashboardHome"}/>
+        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"DashboardHome"}/>
         {/* ManageSchedule page */}    
-        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"ManageSchedules"} GridViewPageName={"ManageSchedules"} ManageSchedulesPageName={"ManageSchedules"} LandingScreenPageName={"ManageSchedules"}/>  
+        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"ManageSchedules"}/>  
         {/* Landing page */}    
-        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"LandingScreen"} GridViewPageName={"LandingScreen"} ManageSchedulesPageName={"LandingScreen"} LandingScreenPageName={"LandingScreen"}/>
+        <SearchComponent description={this.props.description} spcontext={this.props.spcontext} SiteUrl={this.props.SiteUrl} PageName={"LandingScreen"}/>
       </div>      
     );       
   }       

@@ -28,9 +28,9 @@ export default class ManageSchedulesWebPart extends BaseClientSideWebPart<IManag
         spcontext:this.context,
         SiteUrl:this.context.pageContext.web.absoluteUrl,
         PageName:"",
-        GridViewPageName:"",
-        ManageSchedulesPageName:"",
-        LandingScreenPageName:""
+        //GridViewPageName:"",
+        //ManageSchedulesPageName:"",
+        //LandingScreenPageName:""
       }
     );
 
